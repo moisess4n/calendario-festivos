@@ -32,6 +32,7 @@ Una aplicación web moderna para visualizar el calendario laboral de Alcantarill
 - **TypeScript** - Type-safe code
 - **Vite** - Build tool rápido y moderno
 - **Tailwind CSS** - Estilos CSS moderno
+- **Express.js** - Servidor de producción
 
 ## Instalación
 
@@ -44,6 +45,9 @@ npm run dev
 
 # Compilar para producción
 npm run build
+
+# Ejecutar servidor de producción local
+npm start
 
 # Preview de la build producción
 npm run preview
@@ -61,6 +65,28 @@ src/
 ├── main.tsx                     # Entry point
 └── index.css                    # Estilos globales
 ```
+
+## Despliegue en Dokploy
+
+El proyecto está configurado para desplegar automáticamente en Dokploy:
+
+1. **Conecta tu repositorio a Dokploy**
+   - Ve a tu proyecto en Dokploy
+   - Conecta tu repositorio de GitHub/GitLab
+
+2. **Selecciona la configuración correcta:**
+   - **Build Type:** Static SPA (Single Page Application)
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `dist`
+   - **Port:** `3000` (o el que prefieras)
+
+3. **Dokploy usará el Dockerfile automáticamente**
+   - El Dockerfile buildea la app con Vite
+   - Ejecuta un servidor Express para servir la SPA
+   - La app estará disponible en tu dominio asignado
+
+### Variables de entorno
+No se requieren variables de entorno especiales para esta aplicación.
 
 ## Información de Contacto
 
