@@ -10,7 +10,7 @@ export const holidays: Holiday[] = [
   { date: '2026-01-06', name: 'Reyes Magos', type: 'national' },
   { date: '2026-04-17', name: 'Viernes Santo', type: 'national' },
   { date: '2026-05-01', name: 'Día del Trabajo', type: 'national' },
-  { date: '2026-05-22', name: 'San Roque (Patrón de Alcantarilla)', type: 'local' },
+  { date: '2026-05-29', name: 'San Roque (Patrón de Alcantarilla)', type: 'local' },
   { date: '2026-08-15', name: 'Asunción de María', type: 'national' },
   { date: '2026-10-12', name: 'Día de la Hispanidad', type: 'national' },
   { date: '2026-11-01', name: 'Todos los Santos', type: 'national' },
